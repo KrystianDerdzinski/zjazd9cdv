@@ -1,0 +1,18 @@
+<h2>H2 w headerze</h2>
+
+<p>header works!</p>
+
+<div class="text-black text-large" [ngClass]="{ 'text-purple': isPremiumUser }">
+  Witaj!
+</div>
+
+<button (click)="logAsUser()">Log as user</button>
+<button (click)="logAsPremiumUser()">Log as premium</button>
+
+<div *ngIf="!isPremiumUser && isLogged">Rozwaz konto premium</div>
+
+<!-- dodaj nowy komponent login i wyswietl go w app.compontent
+ 1. wygenerowac komponent w terminalu (ng g...)
+ 2. dodac go do tablicy importow app.component
+ 3. wyswietlic w app.component.html uzywajac selectora
+-->
